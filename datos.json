@@ -1,0 +1,2103 @@
+[
+{
+  "model": "centro.departamentos",
+  "pk": 1,
+  "fields": {
+    "Abr": "INF",
+    "Nombre": "Inform\u00e1tica"
+  }
+},
+{
+  "model": "centro.departamentos",
+  "pk": 2,
+  "fields": {
+    "Abr": "fol",
+    "Nombre": "FOL"
+  }
+},
+{
+  "model": "centro.areas",
+  "pk": 1,
+  "fields": {
+    "Nombre": "Formaci\u00f3n Profesional",
+    "Departamentos": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "centro.profesores",
+  "pk": 1,
+  "fields": {
+    "Nombre": "Daniel",
+    "Apellidos": "Galvez Fuente",
+    "Telefono": "45623525",
+    "Movil": "655053245",
+    "Email": "daniel@gmail.com",
+    "Departamento": 1,
+    "Baja": false,
+    "Ce": false,
+    "Etcp": true,
+    "Tic": false,
+    "Bil": false
+  }
+},
+{
+  "model": "centro.profesores",
+  "pk": 2,
+  "fields": {
+    "Nombre": "Mar\u00eda",
+    "Apellidos": "Barcel\u00f3 Belda",
+    "Telefono": "677893421",
+    "Movil": "655987232",
+    "Email": "maria@gmail.com",
+    "Departamento": 1,
+    "Baja": false,
+    "Ce": false,
+    "Etcp": true,
+    "Tic": false,
+    "Bil": false
+  }
+},
+{
+  "model": "centro.profesores",
+  "pk": 3,
+  "fields": {
+    "Nombre": "Jaime",
+    "Apellidos": "Ferrera Su\u00e1rez",
+    "Telefono": "78433728",
+    "Movil": "78787237",
+    "Email": "jaime@gmail.com",
+    "Departamento": 1,
+    "Baja": false,
+    "Ce": false,
+    "Etcp": false,
+    "Tic": false,
+    "Bil": false
+  }
+},
+{
+  "model": "centro.profesores",
+  "pk": 4,
+  "fields": {
+    "Nombre": "Mario",
+    "Apellidos": "Bejarano J\u00f3dar",
+    "Telefono": "",
+    "Movil": "",
+    "Email": "mario@gmail.com",
+    "Departamento": 1,
+    "Baja": false,
+    "Ce": false,
+    "Etcp": false,
+    "Tic": false,
+    "Bil": true
+  }
+},
+{
+  "model": "centro.profesores",
+  "pk": 5,
+  "fields": {
+    "Nombre": "Luz",
+    "Apellidos": "Jara Pintor",
+    "Telefono": "655787362",
+    "Movil": "74356287",
+    "Email": "luz@gmail.com",
+    "Departamento": 2,
+    "Baja": false,
+    "Ce": true,
+    "Etcp": false,
+    "Tic": false,
+    "Bil": false
+  }
+},
+{
+  "model": "centro.cursos",
+  "pk": 307,
+  "fields": {
+    "Curso": "1 CFGS",
+    "Tutor": 3,
+    "EquipoEducativo": [
+      3,
+      4,
+      5
+    ]
+  }
+},
+{
+  "model": "centro.cursos",
+  "pk": 308,
+  "fields": {
+    "Curso": "2 CFGS",
+    "Tutor": 2,
+    "EquipoEducativo": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 1,
+  "fields": {
+    "Nombre": "Juan Manuel Robles Vazquez",
+    "DNI": "91069511O",
+    "Direccion": "Acceso Victor Manuel Carri\u00f3n 593 Piso 4 ",
+    "CodPostal": "41189",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1996-07-24",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Robles",
+    "Ap2tutor": "Vazquez",
+    "Nomtutor": "Carla",
+    "Telefono1": "955685644",
+    "Telefono2": "416564847",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 2,
+  "fields": {
+    "Nombre": "Raquel Morata Terr\u00f3n",
+    "DNI": "74077847B",
+    "Direccion": "Calle Soledad Sanchez 91 Piso 3 ",
+    "CodPostal": "41197",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1997-01-26",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Morata",
+    "Ap2tutor": "Terr\u00f3n",
+    "Nomtutor": "Esther",
+    "Telefono1": "866789603",
+    "Telefono2": "754735132",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 3,
+  "fields": {
+    "Nombre": "Carmen Batalla Villaverde",
+    "DNI": "04801399B",
+    "Direccion": "Avenida de Felix Torrijos 54 Puerta 6 ",
+    "CodPostal": "41461",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1992-08-20",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Batalla",
+    "Ap2tutor": "Villaverde",
+    "Nomtutor": "Josefina",
+    "Telefono1": "313723316",
+    "Telefono2": "379966559",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 4,
+  "fields": {
+    "Nombre": "Pablo Zabaleta Mar\u00edn",
+    "DNI": "29835775Q",
+    "Direccion": "Pasadizo Lorena Cisneros 80 Piso 9 ",
+    "CodPostal": "41239",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1991-12-05",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Zabaleta",
+    "Ap2tutor": "Mar\u00edn",
+    "Nomtutor": "Francisco Javier",
+    "Telefono1": "488893086",
+    "Telefono2": "304821203",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 5,
+  "fields": {
+    "Nombre": "Joan \u00c1lvarez Prada",
+    "DNI": "29314492Q",
+    "Direccion": "Acceso Victor Vera 11 Piso 7 ",
+    "CodPostal": "41767",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1996-11-11",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "\u00c1lvarez",
+    "Ap2tutor": "Prada",
+    "Nomtutor": "Alejandra",
+    "Telefono1": "812433537",
+    "Telefono2": "576062033",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 6,
+  "fields": {
+    "Nombre": "\u00d3scar Zapata Gras",
+    "DNI": "82032456E",
+    "Direccion": "Ronda Raquel Pazos 30 Piso 8 ",
+    "CodPostal": "41189",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1992-03-13",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Zapata",
+    "Ap2tutor": "Gras",
+    "Nomtutor": "Alejandro",
+    "Telefono1": "368203075",
+    "Telefono2": "581392382",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 7,
+  "fields": {
+    "Nombre": "Vicenta Cortes Romeu",
+    "DNI": "17923842I",
+    "Direccion": "C. Ismael Roma 65",
+    "CodPostal": "41126",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1996-02-27",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Cortes",
+    "Ap2tutor": "Romeu",
+    "Nomtutor": "Alejandro",
+    "Telefono1": "656494802",
+    "Telefono2": "462860656",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 8,
+  "fields": {
+    "Nombre": "Vanesa Adadia Cal",
+    "DNI": "00084529N",
+    "Direccion": "Ronda Ivan Crespi 74 Piso 0 ",
+    "CodPostal": "41496",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1988-02-24",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Adadia",
+    "Ap2tutor": "Cal",
+    "Nomtutor": "Guillermo",
+    "Telefono1": "559341502",
+    "Telefono2": "587572374",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 9,
+  "fields": {
+    "Nombre": "Vanesa Nadal V\u00e1zquez",
+    "DNI": "76948411I",
+    "Direccion": "Alameda Antonio Cabello 28 Piso 6 ",
+    "CodPostal": "41217",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1990-07-09",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Nadal",
+    "Ap2tutor": "V\u00e1zquez",
+    "Nomtutor": "Mariano",
+    "Telefono1": "457046759",
+    "Telefono2": "176171185",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 10,
+  "fields": {
+    "Nombre": "Josefa M\u00ednguez Monta\u00f1a",
+    "DNI": "31408004O",
+    "Direccion": "Pasaje Manuel Vigil 96 Piso 2 ",
+    "CodPostal": "41427",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1993-09-29",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "M\u00ednguez",
+    "Ap2tutor": "Monta\u00f1a",
+    "Nomtutor": "Samuel",
+    "Telefono1": "588593206",
+    "Telefono2": "467500531",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 11,
+  "fields": {
+    "Nombre": "Gloria Flor Andrade",
+    "DNI": "67107599P",
+    "Direccion": "Plaza de Salvador Otero 57 Apt. 19 ",
+    "CodPostal": "41256",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1996-10-10",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Flor",
+    "Ap2tutor": "Andrade",
+    "Nomtutor": "Josep",
+    "Telefono1": "858823928",
+    "Telefono2": "432117459",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 12,
+  "fields": {
+    "Nombre": "Sonia Castro Quintero",
+    "DNI": "17862134V",
+    "Direccion": "Rambla de Mohamed D\u00edaz 7",
+    "CodPostal": "41167",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1995-05-13",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Castro",
+    "Ap2tutor": "Quintero",
+    "Nomtutor": "Anna",
+    "Telefono1": "681716996",
+    "Telefono2": "414667245",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 13,
+  "fields": {
+    "Nombre": "Alba Lloret Osuna",
+    "DNI": "18860160Q",
+    "Direccion": "Rambla M\u00f3nica Diego 2 Puerta 7 ",
+    "CodPostal": "41108",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1993-08-05",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Lloret",
+    "Ap2tutor": "Osuna",
+    "Nomtutor": "Jaime",
+    "Telefono1": "838707978",
+    "Telefono2": "591782857",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 14,
+  "fields": {
+    "Nombre": "Soledad Sureda Calder\u00f3n",
+    "DNI": "45732171O",
+    "Direccion": "Paseo de Sofia Tirado 95 Piso 6 ",
+    "CodPostal": "41143",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1993-01-27",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Sureda",
+    "Ap2tutor": "Calder\u00f3n",
+    "Nomtutor": "Juan Francisco",
+    "Telefono1": "261937354",
+    "Telefono2": "098783845",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 15,
+  "fields": {
+    "Nombre": "Eugenia Balaguer Folch",
+    "DNI": "35658122A",
+    "Direccion": "Calle Nuria Gil 163 Piso 7 ",
+    "CodPostal": "41289",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1995-12-27",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Balaguer",
+    "Ap2tutor": "Folch",
+    "Nomtutor": "Lorenzo",
+    "Telefono1": "015314047",
+    "Telefono2": "649305763",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 16,
+  "fields": {
+    "Nombre": "Olga Arenas Hoz",
+    "DNI": "26749365U",
+    "Direccion": "Alameda de Emilio Castej\u00f3n 38 Piso 9 ",
+    "CodPostal": "41078",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1999-03-21",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Arenas",
+    "Ap2tutor": "Hoz",
+    "Nomtutor": "Juan Jos\u00e9",
+    "Telefono1": "645701164",
+    "Telefono2": "508752349",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 17,
+  "fields": {
+    "Nombre": "Ricardo Lucena Cueto",
+    "DNI": "12551620O",
+    "Direccion": "Plaza de Jose Carlos Carre\u00f1o 22",
+    "CodPostal": "41943",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1994-07-28",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Lucena",
+    "Ap2tutor": "Cueto",
+    "Nomtutor": "Mar\u00eda",
+    "Telefono1": "315367534",
+    "Telefono2": "160939062",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 18,
+  "fields": {
+    "Nombre": "Diego Villegas Lara",
+    "DNI": "86946216D",
+    "Direccion": "Paseo de Alejandra Cardona 677",
+    "CodPostal": "41972",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1990-09-27",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Villegas",
+    "Ap2tutor": "Lara",
+    "Nomtutor": "Lidia",
+    "Telefono1": "458417902",
+    "Telefono2": "243694117",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 19,
+  "fields": {
+    "Nombre": "Lorena Porcel Blanes",
+    "DNI": "41477199P",
+    "Direccion": "Callej\u00f3n Aurora Luz 733",
+    "CodPostal": "41460",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1994-07-26",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Porcel",
+    "Ap2tutor": "Blanes",
+    "Nomtutor": "Sonia",
+    "Telefono1": "564688659",
+    "Telefono2": "385227163",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 20,
+  "fields": {
+    "Nombre": "Victor Pedraza Castej\u00f3n",
+    "DNI": "22896315C",
+    "Direccion": "Cuesta Francisco Jose Calvet 317",
+    "CodPostal": "41022",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1993-12-24",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Pedraza",
+    "Ap2tutor": "Castej\u00f3n",
+    "Nomtutor": "Concepci\u00f3n",
+    "Telefono1": "504978446",
+    "Telefono2": "111648448",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 21,
+  "fields": {
+    "Nombre": "Bego\u00f1a \u00c1guila Coca",
+    "DNI": "47112407N",
+    "Direccion": "Ca\u00f1ada Rocio Ari\u00f1o 2",
+    "CodPostal": "41454",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1991-02-02",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "\u00c1guila",
+    "Ap2tutor": "Coca",
+    "Nomtutor": "Agust\u00edn",
+    "Telefono1": "083887126",
+    "Telefono2": "725975388",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 22,
+  "fields": {
+    "Nombre": "Jorge Exp\u00f3sito Aroca",
+    "DNI": "61621497T",
+    "Direccion": "Cuesta de Miriam Alemany 167",
+    "CodPostal": "41039",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1990-05-12",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Exp\u00f3sito",
+    "Ap2tutor": "Aroca",
+    "Nomtutor": "Esperanza",
+    "Telefono1": "588422776",
+    "Telefono2": "854125441",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 23,
+  "fields": {
+    "Nombre": "Jes\u00fas Cabo Pacheco",
+    "DNI": "03575932M",
+    "Direccion": "Pasaje Alicia Querol 14 Apt. 10 ",
+    "CodPostal": "41281",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1993-07-09",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Cabo",
+    "Ap2tutor": "Pacheco",
+    "Nomtutor": "Marc",
+    "Telefono1": "659556346",
+    "Telefono2": "276541861",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 24,
+  "fields": {
+    "Nombre": "Belen Vilaplana Caballero",
+    "DNI": "34479094O",
+    "Direccion": "Acceso Lourdes Borr\u00e1s 588",
+    "CodPostal": "41502",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1994-07-25",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Vilaplana",
+    "Ap2tutor": "Caballero",
+    "Nomtutor": "Encarnacion",
+    "Telefono1": "103490437",
+    "Telefono2": "989646150",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 25,
+  "fields": {
+    "Nombre": "Jorge Su\u00e1rez Carrasco",
+    "DNI": "81725908M",
+    "Direccion": "Urbanizaci\u00f3n de Elisa Cornejo 42 Piso 0 ",
+    "CodPostal": "41083",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1988-02-25",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Su\u00e1rez",
+    "Ap2tutor": "Carrasco",
+    "Nomtutor": "Cristian",
+    "Telefono1": "112625148",
+    "Telefono2": "316343657",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 26,
+  "fields": {
+    "Nombre": "Jose Angel Sancho Pla",
+    "DNI": "83276095Q",
+    "Direccion": "Plaza de Joan Prado 2",
+    "CodPostal": "41201",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1994-11-21",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Sancho",
+    "Ap2tutor": "Pla",
+    "Nomtutor": "Felipe",
+    "Telefono1": "925727212",
+    "Telefono2": "043247686",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 27,
+  "fields": {
+    "Nombre": "Andr\u00e9s Ni\u00f1o Ibarra",
+    "DNI": "37272524E",
+    "Direccion": "Urbanizaci\u00f3n Gabriel Herrera 14 Apt. 01 ",
+    "CodPostal": "41830",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1989-11-12",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Ni\u00f1o",
+    "Ap2tutor": "Ibarra",
+    "Nomtutor": "Domingo",
+    "Telefono1": "783789099",
+    "Telefono2": "414663918",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 28,
+  "fields": {
+    "Nombre": "Ramon Su\u00e1rez Exposito",
+    "DNI": "45162107V",
+    "Direccion": "Camino Alba Palomo 7",
+    "CodPostal": "41922",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1996-04-06",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Su\u00e1rez",
+    "Ap2tutor": "Exposito",
+    "Nomtutor": "Roberto",
+    "Telefono1": "292178915",
+    "Telefono2": "434249862",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 29,
+  "fields": {
+    "Nombre": "Eugenia Sacrist\u00e1n Amaya",
+    "DNI": "63997316A",
+    "Direccion": "Rambla de Sergio Lozano 3 Piso 3 ",
+    "CodPostal": "41575",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1996-01-12",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Sacrist\u00e1n",
+    "Ap2tutor": "Amaya",
+    "Nomtutor": "Antonio",
+    "Telefono1": "445265086",
+    "Telefono2": "242377433",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 30,
+  "fields": {
+    "Nombre": "David Correa Echevarr\u00eda",
+    "DNI": "34916193B",
+    "Direccion": "Ronda de Alberto Manj\u00f3n 627",
+    "CodPostal": "41720",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1998-02-08",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Correa",
+    "Ap2tutor": "Echevarr\u00eda",
+    "Nomtutor": "Natalia",
+    "Telefono1": "740486521",
+    "Telefono2": "713592204",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 31,
+  "fields": {
+    "Nombre": "Miguel \u00c1ngel Solano Ponce",
+    "DNI": "28422549E",
+    "Direccion": "Via Juan Luis \u00c1lamo 30",
+    "CodPostal": "41197",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1996-04-12",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Solano",
+    "Ap2tutor": "Ponce",
+    "Nomtutor": "Julio",
+    "Telefono1": "897883343",
+    "Telefono2": "747935128",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 32,
+  "fields": {
+    "Nombre": "Ruben Castilla Dalmau",
+    "DNI": "15024527V",
+    "Direccion": "Paseo de Magdalena Pizarro 76 Puerta 2 ",
+    "CodPostal": "41978",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1988-07-06",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Castilla",
+    "Ap2tutor": "Dalmau",
+    "Nomtutor": "Irene",
+    "Telefono1": "323242508",
+    "Telefono2": "127386763",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 33,
+  "fields": {
+    "Nombre": "Adriana Huertas Mascar\u00f3",
+    "DNI": "74280667E",
+    "Direccion": "Avenida de Joan Manj\u00f3n 743",
+    "CodPostal": "41454",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1997-04-17",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Huertas",
+    "Ap2tutor": "Mascar\u00f3",
+    "Nomtutor": "Soledad",
+    "Telefono1": "057691406",
+    "Telefono2": "407113916",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 34,
+  "fields": {
+    "Nombre": "Iker Atienza S\u00e1enz",
+    "DNI": "64656038R",
+    "Direccion": "Via Santiago Calatayud 1 Puerta 5 ",
+    "CodPostal": "41072",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1997-03-31",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Atienza",
+    "Ap2tutor": "S\u00e1enz",
+    "Nomtutor": "Manuel",
+    "Telefono1": "125352215",
+    "Telefono2": "074424749",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 35,
+  "fields": {
+    "Nombre": "Adri\u00e1n Rosado Suarez",
+    "DNI": "90704413N",
+    "Direccion": "Calle de Remedios Rold\u00e1n 53",
+    "CodPostal": "41136",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1991-07-24",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Rosado",
+    "Ap2tutor": "Suarez",
+    "Nomtutor": "Josep",
+    "Telefono1": "945520042",
+    "Telefono2": "663563758",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 36,
+  "fields": {
+    "Nombre": "Antonio Pareja Guzm\u00e1n",
+    "DNI": "39597748C",
+    "Direccion": "Ca\u00f1ada Ivan Blasco 901",
+    "CodPostal": "41501",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1995-10-26",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Pareja",
+    "Ap2tutor": "Guzm\u00e1n",
+    "Nomtutor": "Rosa",
+    "Telefono1": "687459140",
+    "Telefono2": "595518693",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 37,
+  "fields": {
+    "Nombre": "Jaime El\u00edas Mayoral",
+    "DNI": "75445461P",
+    "Direccion": "Avenida de Jose Miguel Galvez 50",
+    "CodPostal": "41681",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1998-08-04",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "El\u00edas",
+    "Ap2tutor": "Mayoral",
+    "Nomtutor": "Victor",
+    "Telefono1": "283281645",
+    "Telefono2": "887585631",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 38,
+  "fields": {
+    "Nombre": "Blanca Ure\u00f1a Gonzalez",
+    "DNI": "29922840D",
+    "Direccion": "Pasaje de Vanesa Pina 36 Piso 4 ",
+    "CodPostal": "41597",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1994-02-05",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Ure\u00f1a",
+    "Ap2tutor": "Gonzalez",
+    "Nomtutor": "Sara",
+    "Telefono1": "064386704",
+    "Telefono2": "498175343",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 39,
+  "fields": {
+    "Nombre": "Ivan Pozuelo Contreras",
+    "DNI": "11898979C",
+    "Direccion": "Camino Carolina Amo 38 Piso 4 ",
+    "CodPostal": "41085",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1998-03-15",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Pozuelo",
+    "Ap2tutor": "Contreras",
+    "Nomtutor": "Albert",
+    "Telefono1": "290684169",
+    "Telefono2": "886551535",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 40,
+  "fields": {
+    "Nombre": "Raquel Barber\u00e1 Valverde",
+    "DNI": "53789273C",
+    "Direccion": "Pasaje Olga Sedano 13",
+    "CodPostal": "41283",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1998-09-06",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Barber\u00e1",
+    "Ap2tutor": "Valverde",
+    "Nomtutor": "Encarnacion",
+    "Telefono1": "992932886",
+    "Telefono2": "214504791",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 41,
+  "fields": {
+    "Nombre": "Adriana Ponce Ferrera",
+    "DNI": "33867038N",
+    "Direccion": "C. Martin M\u00e1rmol 54",
+    "CodPostal": "41273",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1991-06-22",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Ponce",
+    "Ap2tutor": "Ferrera",
+    "Nomtutor": "Pedro",
+    "Telefono1": "464791889",
+    "Telefono2": "739118109",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 42,
+  "fields": {
+    "Nombre": "Alejandra Aparicio Agudo",
+    "DNI": "90911705D",
+    "Direccion": "Via Adriana Ord\u00f3\u00f1ez 69",
+    "CodPostal": "41222",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1988-10-12",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Aparicio",
+    "Ap2tutor": "Agudo",
+    "Nomtutor": "Marta",
+    "Telefono1": "372819606",
+    "Telefono2": "803542944",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 43,
+  "fields": {
+    "Nombre": "Sebastian Parejo Rom\u00e1n",
+    "DNI": "02890104E",
+    "Direccion": "Ca\u00f1ada Soledad Espa\u00f1a 31 Puerta 3 ",
+    "CodPostal": "41120",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1992-05-23",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Parejo",
+    "Ap2tutor": "Rom\u00e1n",
+    "Nomtutor": "Rosa",
+    "Telefono1": "492781070",
+    "Telefono2": "993113227",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 44,
+  "fields": {
+    "Nombre": "Sofia Pulido Vi\u00f1a",
+    "DNI": "29787494V",
+    "Direccion": "C. de Lu\u00eds Raya 503 Puerta 5 ",
+    "CodPostal": "41360",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1996-02-11",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Pulido",
+    "Ap2tutor": "Vi\u00f1a",
+    "Nomtutor": "Carlos",
+    "Telefono1": "010771368",
+    "Telefono2": "184945201",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 45,
+  "fields": {
+    "Nombre": "Jose Maria V\u00e1zquez Oliva",
+    "DNI": "27952849A",
+    "Direccion": "Glorieta Natalia Tapia 959 Puerta 7 ",
+    "CodPostal": "41259",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1997-06-13",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "V\u00e1zquez",
+    "Ap2tutor": "Oliva",
+    "Nomtutor": "Sebastian",
+    "Telefono1": "352847580",
+    "Telefono2": "567261495",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 46,
+  "fields": {
+    "Nombre": "Miguel Ruano Pujol",
+    "DNI": "74456253I",
+    "Direccion": "Calle F\u00e1tima Solera 98 Puerta 8 ",
+    "CodPostal": "41309",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1993-08-11",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Ruano",
+    "Ap2tutor": "Pujol",
+    "Nomtutor": "Pedro",
+    "Telefono1": "212636801",
+    "Telefono2": "841938891",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 47,
+  "fields": {
+    "Nombre": "Aitor Aliaga Alberto",
+    "DNI": "10457573M",
+    "Direccion": "Camino Xavier Palmer 50",
+    "CodPostal": "41389",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1994-09-16",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Aliaga",
+    "Ap2tutor": "Alberto",
+    "Nomtutor": "Nuria",
+    "Telefono1": "498117356",
+    "Telefono2": "113667440",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 48,
+  "fields": {
+    "Nombre": "Emilio Alcalde Roig",
+    "DNI": "34220795F",
+    "Direccion": "Camino Milagros Garc\u00e9s 38",
+    "CodPostal": "41184",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1989-09-21",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Alcalde",
+    "Ap2tutor": "Roig",
+    "Nomtutor": "Jose",
+    "Telefono1": "302057848",
+    "Telefono2": "976734473",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 49,
+  "fields": {
+    "Nombre": "Esther Diego Merino",
+    "DNI": "67701858A",
+    "Direccion": "Avenida de Nerea Barbero 26",
+    "CodPostal": "41535",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1993-07-18",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Diego",
+    "Ap2tutor": "Merino",
+    "Nomtutor": "Luc\u00eda",
+    "Telefono1": "123842848",
+    "Telefono2": "255659708",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 50,
+  "fields": {
+    "Nombre": "Daniela Angulo Figuerola",
+    "DNI": "13472290S",
+    "Direccion": "Plaza de Luz Carmona 44 Piso 9 ",
+    "CodPostal": "41039",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1999-08-11",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Angulo",
+    "Ap2tutor": "Figuerola",
+    "Nomtutor": "Lorena",
+    "Telefono1": "523353859",
+    "Telefono2": "370853434",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 51,
+  "fields": {
+    "Nombre": "Paula Cepeda Llobet",
+    "DNI": "46115461A",
+    "Direccion": "Calle Sara Mendez 1",
+    "CodPostal": "41650",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1989-09-20",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Cepeda",
+    "Ap2tutor": "Llobet",
+    "Nomtutor": "F\u00e1tima",
+    "Telefono1": "815220334",
+    "Telefono2": "625606797",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 52,
+  "fields": {
+    "Nombre": "Juan Manuel Prieto Quero",
+    "DNI": "28277491A",
+    "Direccion": "Via de Catalina Torrents 4 Puerta 6 ",
+    "CodPostal": "41706",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1993-05-08",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Prieto",
+    "Ap2tutor": "Quero",
+    "Nomtutor": "Olga",
+    "Telefono1": "455833611",
+    "Telefono2": "194821233",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 53,
+  "fields": {
+    "Nombre": "Noelia Donoso Solsona",
+    "DNI": "54125025S",
+    "Direccion": "Ca\u00f1ada Trinidad Romeu 912 Piso 5 ",
+    "CodPostal": "41248",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1996-01-26",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Donoso",
+    "Ap2tutor": "Solsona",
+    "Nomtutor": "Daniel",
+    "Telefono1": "115862859",
+    "Telefono2": "923242841",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 54,
+  "fields": {
+    "Nombre": "Alex Ferrer Solsona",
+    "DNI": "71922331I",
+    "Direccion": "Pasaje de Luis Miguel Villa 10",
+    "CodPostal": "41370",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1989-03-05",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Ferrer",
+    "Ap2tutor": "Solsona",
+    "Nomtutor": "Juan Manuel",
+    "Telefono1": "957186238",
+    "Telefono2": "578481720",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 55,
+  "fields": {
+    "Nombre": "Josefa Ben\u00edtez Soriano",
+    "DNI": "47858503M",
+    "Direccion": "Calle Mercedes Carreras 891",
+    "CodPostal": "41544",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1995-01-22",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Ben\u00edtez",
+    "Ap2tutor": "Soriano",
+    "Nomtutor": "Ismael",
+    "Telefono1": "243182397",
+    "Telefono2": "716579944",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 56,
+  "fields": {
+    "Nombre": "Ignacio Peral Catal\u00e1",
+    "DNI": "81365593E",
+    "Direccion": "Urbanizaci\u00f3n de Gloria Sureda 770 Puerta 6 ",
+    "CodPostal": "41401",
+    "Localidad": "Utrera",
+    "Fecha_nacimiento": "1991-02-22",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Peral",
+    "Ap2tutor": "Catal\u00e1",
+    "Nomtutor": "Alfredo",
+    "Telefono1": "846763567",
+    "Telefono2": "504608092",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 57,
+  "fields": {
+    "Nombre": "Susana Bola\u00f1os Sanjuan",
+    "DNI": "37893620O",
+    "Direccion": "Rambla Lu\u00eds Abril 5 Piso 7 ",
+    "CodPostal": "41416",
+    "Localidad": "Dos Hermanas",
+    "Fecha_nacimiento": "1989-06-01",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Bola\u00f1os",
+    "Ap2tutor": "Sanjuan",
+    "Nomtutor": "Jose Luis",
+    "Telefono1": "476240973",
+    "Telefono2": "558556219",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 58,
+  "fields": {
+    "Nombre": "Eva Elorza Ricart",
+    "DNI": "40991832R",
+    "Direccion": "Ronda Miguel Oliver 523",
+    "CodPostal": "41562",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1989-10-09",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "Elorza",
+    "Ap2tutor": "Ricart",
+    "Nomtutor": "Josefina",
+    "Telefono1": "606097608",
+    "Telefono2": "939938091",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 59,
+  "fields": {
+    "Nombre": "Alba J\u00f3dar Arnaiz",
+    "DNI": "14950933C",
+    "Direccion": "Avenida de Raul Alegre 39",
+    "CodPostal": "41774",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1987-12-22",
+    "Provincia": "Sevilla",
+    "Unidad": 307,
+    "Ap1tutor": "J\u00f3dar",
+    "Ap2tutor": "Arnaiz",
+    "Nomtutor": "Jose Angel",
+    "Telefono1": "880580021",
+    "Telefono2": "508132625",
+    "Obs": ""
+  }
+},
+{
+  "model": "centro.alumnos",
+  "pk": 60,
+  "fields": {
+    "Nombre": "Susana Linares Salamanca",
+    "DNI": "86322775A",
+    "Direccion": "Acceso de Mireia Cabanillas 98",
+    "CodPostal": "41497",
+    "Localidad": "Sevilla",
+    "Fecha_nacimiento": "1997-08-07",
+    "Provincia": "Sevilla",
+    "Unidad": 308,
+    "Ap1tutor": "Linares",
+    "Ap2tutor": "Salamanca",
+    "Nomtutor": "Consuelo",
+    "Telefono1": "855925530",
+    "Telefono2": "491854842",
+    "Obs": ""
+  }
+},
+{
+  "model": "convivencia.amonestaciones",
+  "pk": 1,
+  "fields": {
+    "IdAlumno": 4,
+    "Fecha": "2017-10-17",
+    "Hora": "1",
+    "Comentario": "Se ha portado mal",
+    "Profesor": 1,
+    "Tipo": null
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "centro",
+    "model": "departamentos"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "centro",
+    "model": "alumnos"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "centro",
+    "model": "cursos"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "centro",
+    "model": "areas"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "centro",
+    "model": "profesores"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "convivencia",
+    "model": "amonestaciones"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "convivencia",
+    "model": "tiposamonestaciones"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "convivencia",
+    "model": "sanciones"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jnp13ecgbh0x4oncstd9jt4tpj30j2q3",
+  "fields": {
+    "session_data": "ZDA0OTEzOTU4ZTNjY2U2NDBhOGM5NTk1OTE2MzRlZjYwNjdkYzc5OTp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiVW5pZGFkIjoiMzA4IiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJEZXBhcnRhbWVudG8iOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiOGJhZTY4NTgzODkwNzQ1NWFhMjQyY2QxY2EzOGViOTRlYTBlNTRiZSIsIkFyZWFzIjoiMSJ9",
+    "expire_date": "2017-10-31T16:11:19.697Z"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add Departamento",
+    "content_type": 1,
+    "codename": "add_departamentos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change Departamento",
+    "content_type": 1,
+    "codename": "change_departamentos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete Departamento",
+    "content_type": 1,
+    "codename": "delete_departamentos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can add Alumno",
+    "content_type": 2,
+    "codename": "add_alumnos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can change Alumno",
+    "content_type": 2,
+    "codename": "change_alumnos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can delete Alumno",
+    "content_type": 2,
+    "codename": "delete_alumnos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can add Curso",
+    "content_type": 3,
+    "codename": "add_cursos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can change Curso",
+    "content_type": 3,
+    "codename": "change_cursos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can delete Curso",
+    "content_type": 3,
+    "codename": "delete_cursos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can add \u00c1rea",
+    "content_type": 4,
+    "codename": "add_areas"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can change \u00c1rea",
+    "content_type": 4,
+    "codename": "change_areas"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can delete \u00c1rea",
+    "content_type": 4,
+    "codename": "delete_areas"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add Profesor",
+    "content_type": 5,
+    "codename": "add_profesores"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change Profesor",
+    "content_type": 5,
+    "codename": "change_profesores"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete Profesor",
+    "content_type": 5,
+    "codename": "delete_profesores"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can add Amonestaci\u00f3n",
+    "content_type": 6,
+    "codename": "add_amonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can change Amonestaci\u00f3n",
+    "content_type": 6,
+    "codename": "change_amonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can delete Amonestaci\u00f3n",
+    "content_type": 6,
+    "codename": "delete_amonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can add Tipo Amonestaci\u00f3n",
+    "content_type": 7,
+    "codename": "add_tiposamonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can change Tipo Amonestaci\u00f3n",
+    "content_type": 7,
+    "codename": "change_tiposamonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can delete Tipo Amonestaci\u00f3n",
+    "content_type": 7,
+    "codename": "delete_tiposamonestaciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can add Sanci\u00f3n",
+    "content_type": 8,
+    "codename": "add_sanciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can change Sanci\u00f3n",
+    "content_type": 8,
+    "codename": "change_sanciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can delete Sanci\u00f3n",
+    "content_type": 8,
+    "codename": "delete_sanciones"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 9,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 9,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 9,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 10,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 10,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 10,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 11,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 11,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 11,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 12,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 12,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 12,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 13,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 13,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 13,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 14,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 14,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 14,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.group",
+  "pk": 1,
+  "fields": {
+    "name": "jefatura de estudios",
+    "permissions": [
+      4,
+      5,
+      6,
+      10,
+      11,
+      12,
+      7,
+      8,
+      9,
+      1,
+      2,
+      3,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      22,
+      23,
+      24,
+      19,
+      20,
+      21
+    ]
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$30000$2yFM6G81L6D7$sqzpGD2BoK9UHWv7Pw/8+YzpomELbBZIUzKrEYQaDYU=",
+    "last_login": "2017-10-17T15:47:08.433Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.es",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-10-17T14:45:37.392Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$30000$pMHrhbxMjEJu$GFk/JmH8XoUU/dNcykmuzeltgx+LQKd8UWNz7qmv9xM=",
+    "last_login": "2017-10-17T15:50:19.393Z",
+    "is_superuser": false,
+    "username": "usuario",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-10-17T15:45:57Z",
+    "groups": [
+      1
+    ],
+    "user_permissions": []
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2017-10-17T15:45:58.026Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "usuario",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2017-10-17T15:49:51.582Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "jefatura de estudios",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2017-10-17T15:50:06.155Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "usuario",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"is_staff\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2017-10-17T16:05:48.597Z",
+    "user": 2,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "Inform\u00e1tica",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2017-10-17T16:05:53.141Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "1",
+    "object_repr": "Daniel Galvez Fuente",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2017-10-17T16:06:45.021Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Mar\u00eda Barcel\u00f3 Belda",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2017-10-17T16:06:47.395Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "2",
+    "object_repr": "Mar\u00eda Barcel\u00f3 Belda",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2017-10-17T16:07:25.020Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "3",
+    "object_repr": "Jaime Ferrera Su\u00e1rez",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2017-10-17T16:08:01.738Z",
+    "user": 2,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "FOL",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2017-10-17T16:08:07.331Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "4",
+    "object_repr": "Mario Bejarano J\u00f3dar",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2017-10-17T16:08:38.332Z",
+    "user": 2,
+    "content_type": 5,
+    "object_id": "5",
+    "object_repr": "Luz Jara Pintor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2017-10-17T16:09:17.259Z",
+    "user": 2,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "Formaci\u00f3n Profesional",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2017-10-17T16:09:54.228Z",
+    "user": 2,
+    "content_type": 3,
+    "object_id": "307",
+    "object_repr": "1 CFGS",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tutor\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2017-10-17T16:10:10.616Z",
+    "user": 2,
+    "content_type": 3,
+    "object_id": "308",
+    "object_repr": "2 CFGS",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tutor\"]}}]"
+  }
+}
+]
