@@ -1,0 +1,18 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+<h3>{{titulo}}</h3>
+<h4>Alumno: {{alum.Nombre}} ({{alum.Unidad}})</h4>
+
+
+<form action="/convivencia/{{tipo}}/{{alum.id}}" method="post">
+    {% csrf_token %}
+    {{ form.as_p}}
+    
+<br/><input type="submit" value="Guardar" />
+</form>
+<br/><br/>
+
+{% endblock %}

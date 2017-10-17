@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block menu %}
+    <aside>
+        
+            
+            {% if user.is_authenticated %}
+            <br/>
+                <div class="center-block btn-group-vertical" role="group" aria-label="...">
+                    <p class="text-center"><strong>Bienvenid@ {{user.username}}</strong></p>
+                    <p class="text-center"><strong>Menú</strong></p>
+                    
+                    {% if user.groups.first.name == "jefatura de estudios" or user.groups.last.name == "jefatura de estudios" %}
+                    <a class="btn btn-default btn-primary" href="/centro/alumnos" role="button">Alumnos</a>
+                    {% if menu_alumnos or menu_resumen%}
+                    <a class="btn btn-default btn-secundary" href="/convivencia/resumen/amonestacion" role="button">Resumen de amonestaciones</a>
+                    <a class="btn btn-default btn-secundary" href="/convivencia/resumen/sancion" role="button">Resumen de sanciones</a>
+                    <a class="btn btn-default btn-secundary" href="/pdf/sanciones/hoy" role="button">Imprimir Sanciones Hoy</a>
+                    {% if menu_alumnos and curso %}
+                    <a class="btn btn-default btn-secundary" href="/pdf/partes/{{curso.id}}" role="button">Imprimir {{curso.Curso}}</a>
+                    <a class="btn btn-default btn-secundary" href="/pdf/faltas/{{curso.id}}" role="button">Control de Faltas {{curso.Curso}}</a>
+                    {%endif%}
+                    
+                    {% endif%}
+
+                    {% if menu_sancion%}
+                    <a class="btn btn-default btn-secundary" href="/pdf/show/sancion/{{ fecha|date:"m" }}/{{ fecha|date:"Y" }}/{{ fecha|date:"d" }}" role="button">Imprimir Sanciones</a>
+                    
+                    
+                    {%endif%}
+
+                    {% if menu_historial and prof%}
+                    <a class="btn btn-default btn-secundary" href="/pdf/historial/{{alum.id}}/" role="button">Imprimir Historial</a>
+                    {%endif%}
+                    {% if menu_historial and not prof %}
+                    <a class="btn btn-default btn-secundary" href="/pdf/historial/{{alum.id}}/n" role="button">Imprimir Historial</a>
+                    {%endif%}
+                    {% if menu_amonestacion%}
+                    <a class="btn btn-default btn-secundary" href="/pdf/show/amonestacion/{{ fecha|date:"m" }}/{{ fecha|date:"Y" }}/{{ fecha|date:"d" }}" role="button">Imprimir Amonestaciones</a>
+                    <a class="btn btn-default btn-secundary" href="/pdf/carta_amonestacion/{{ fecha|date:"m" }}/{{ fecha|date:"Y" }}/{{ fecha|date:"d" }}" role="button">Imprimir Cartas</a>
+                    {%endif%}
+
+                    
+                                       
+                    
+                    
+                    <a class="btn btn-default btn-primary" href="/centro/cursos" role="button">Cursos</a>
+
+                    <a class="btn btn-default btn-primary" href="/centro/profesores" role="button">Profesores</a>
+		    {% if menu_profesor%}
+                    <a class="btn btn-default btn-secundary" href="/pdf/profesores">Imprimir lista de Profesores</a>
+                    <a class="btn btn-default btn-secundary" href="/pdf/claustro">Imprimir asistencia al claustro</a>
+		    {% endif%}
+                    
+                    {%endif%}
+                    <a class="btn btn-default btn-primary" href="/admin" role="button">Administración</a>
+                    <a class="btn btn-default btn-primary" href="/logout" role="button">Desconectar</a>
+                </div>
+
+            
+            {% else %}
+                <form action="/" method="post" class="form-signin">
+                    {% csrf_token %}
+                     <h4 class="form-signin-heading">Login</h4>
+                      {% if error %}
+                          <h3 class="bg-danger">Error en login.</h3>
+                      {% endif%}
+                      <label for="inputEmail" class="sr-only">Usuario</label>
+                      <input type="text" name="username" id="inputText" class="form-control" placeholder="Usuario" required autofocus>
+                      <label for="inputPassword" class="sr-only">Password</label>
+                      <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                      <input type="hidden" name="next" value="{{next}}">
+                      <!--<div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="remember-me"> Recuérdame
+                              </label>
+                            </div>-->
+                      <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                    </form>
+
+            {% endif %}
+            
+        
+    </aside>
+{% endblock %}

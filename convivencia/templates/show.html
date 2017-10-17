@@ -1,0 +1,52 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+
+    <h3>{{titulo}}</h3>
+<h4>{{fecha|date:"d - F - Y"}}</h4>
+
+{% if datos %}
+
+<table class="table table-bordered">
+	<tr>
+        <td>N.</td>
+        <td>Alumno</td>
+        <td>Unidad</td>
+        {% if amonestacion %}
+            <td>A/S</td>  
+        {% endif%}  
+        {% if sancion %}
+            <td>Sanción</td>
+            <td>F ini.</td>
+            <td>F fin.</td>
+            <td>Carta</td>
+        {% endif%}  
+    </tr>
+	
+    {% for n,h,contar in datos %}
+    <tr>
+        <td>{{ n }}</td>
+        <td>{{h.IdAlumno.Nombre}}</td>
+    	<td>{{h.IdAlumno.Unidad}}</td>
+        {% if amonestacion %}
+        <td>{{contar}}</td>
+        {% endif%}
+        {% if sancion %}
+            <td>{{h.Sancion}}</td>
+            <td>{{h.Fecha|date:"d/m/Y"}}</td>
+            <td>{{h.Fecha_fin|date:"d/m/Y"}}</td>
+            
+            <td><a href="/pdf/carta_sancion/{{h.id}}"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a></td>
+        {% endif%}
+        
+    </tr>
+    {% endfor %}
+    </table>
+
+
+{% else %}
+    <p>No hay resumen de amonestaciones/sanciones/amonestaciones.</p>
+{% endif %}
+{% endblock %}

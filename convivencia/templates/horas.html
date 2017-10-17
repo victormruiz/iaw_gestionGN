@@ -1,0 +1,34 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+<h3>Filtrar por fechas</h3>
+ <form action="/convivencia/horas" method="POST" class="form-hotizontal">
+        {% csrf_token %}
+        <div class="form-group">
+              <div class="col-xs-8">
+                {{ form.as_p }}
+            
+           <input type="submit" value="Filtrar" />
+           </div>
+        </div>
+
+	
+    </form>
+<br/>
+	    <br/>
+	    <br/>
+	    <br/>
+<hr/>
+<h3>Resumen de amonestaciones por horas</h3>
+<table class="table table-bordered">
+    {% for h,c in horas %}
+<tr>
+    <td>{{h}}</td>
+    <td class="text-center">{{c}}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

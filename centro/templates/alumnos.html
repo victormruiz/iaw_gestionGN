@@ -1,0 +1,46 @@
+{% extends "base_menu.html" %}
+
+
+{% block content %}
+<h3>Búsqueda</h3>
+ <form action="/centro/alumnos" method="post" class="form-hotizontal">
+        {% csrf_token %}
+        <div class="form-group">
+              <div class="col-xs-4">
+                {{ form.as_p }}
+            </div>
+        </div>
+
+    </form>
+<br/><br/>
+    <hr/>
+    <!--<a href="/usuarios/add"><button type="submit" class="btn btn-primary">Nuevo usuario</button></a>
+    <a href="/usuarios/tipo"><button type="submit" class="btn btn-primary">Asignar Tipo</button></a>-->
+<h2>Alumnos - {{curso.Curso}}</h2>
+<h4>Tutor: {{curso.Tutor}}</h4>
+<table class="table table-bordered">
+    <tr><td class="text-center">N.</td><td>Alumno</td><td class="text-center">A/S</td><td class="text-center">A</td><td class="text-center">S</td><td class="text-center">Hist.</td></tr>
+    
+    {% for alum,acum,sanc in alumnos%}
+    
+    {% if sanc %}
+    <tr class="danger">
+    {%else%}
+    <tr>
+    {% endif %}
+      <td class="text-center">{{forloop.counter}}</td>
+         
+        
+      <td>{{alum.Nombre}}</td>
+      
+      <td class="text-center">{{acum}}</td>
+      <td class="text-center"><a href="/convivencia/amonestacion/{{alum.id}}"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></a></td>
+      <td class="text-center"><a href="/convivencia/sancion/{{alum.id}}"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></a></td>
+      <td class="text-center"><a href="/convivencia/historial/{{alum.id}}/"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></a></td>
+      
+    </tr>
+    {% endfor %}
+    </table>
+
+
+{% endblock %}

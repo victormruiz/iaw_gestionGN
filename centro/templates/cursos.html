@@ -1,0 +1,40 @@
+{% extends "base_menu.html" %}
+
+
+{% block content %}
+<h2>Cursos</h2>
+ 
+<table class="table table-bordered">
+    <tr><td>Curso</td><td>Tutor</td><td>Equipo Educativo</td><td>Control Asistencia</td></tr>
+    
+    {% for curso in cursos%}
+    
+    <tr>
+      <td><a href="/centro/alumnos/{{curso.id}}">{{curso.Curso}}</a></td>
+
+        
+      <td>{{curso.Tutor}}</td>
+      
+      <td>
+        <p>
+          <a data-toggle="collapse" href="#collapseExample{{curso.id}}" aria-expanded="false" aria-controls="collapseExample{{curso.id}}">Equipo Educativo</a>
+        </p>
+        <div class="collapse" id="collapseExample{{curso.id}}"> 
+          <div class="card card-body">
+           
+          <ul>
+            {% for prof in curso.EquipoEducativo.all %}
+              <li>{{prof}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      </td>
+      <td><a href="/pdf/claustro/{{curso.id}}">Control Asistencia</a></td>
+      
+    </tr>
+    {% endfor %}
+    </table>
+
+
+{% endblock %}

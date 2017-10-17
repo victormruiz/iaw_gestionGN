@@ -1,0 +1,33 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+<h3>Resumen de amonestaciones por profesores</h3>
+<form action="/convivencia/profesores" method="POST" class="form-hotizontal">
+        {% csrf_token %}
+        <div class="form-group">
+              <div class="col-xs-8">
+                {{ form.as_p }}
+            
+           <input type="submit" value="Filtrar" /><br/>
+<br/>
+
+           </div>
+        </div>
+
+	
+    </form>
+<table class="table table-bordered">
+    {% for l in lista %}
+<tr>
+    <td class="text-center">{{forloop.counter}}</td>
+    <td>{{l.Profesor}}</td>
+    <td class="text-center">{{l.Profesor__count}}</td>
+</tr>
+
+{% endfor %}
+<tr><td></td><td class="text-right"><strong>Total:</strong></td><td class="text-center"><strong>{{suma}}</string></td></tr>
+</table>
+
+{% endblock %}

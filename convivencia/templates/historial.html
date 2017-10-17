@@ -1,0 +1,56 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+<h3>Historial Alumno</h3>
+<h4>{{alum.Nombre}} ({{alum.Unidad}})</h4>
+{% if historial %}
+{% if prof %}
+    <a href="/convivencia/historial/{{alum.id}}/n">Mostrar historial sin datos de profesores</a>
+{% else %}    
+    <a href="/convivencia/historial/{{alum.id}}/">Mostrar historial con datos de profesores</a>
+{% endif %}
+<br/>
+<br/>
+
+<table class="table table-bordered">
+
+	<tr><td>N.</td><td>Tipo</td><td>Fecha</td><td>Fecha fin.</td><td>Sanción</td><td>Comentario</td></tr>
+	
+    {% for h,t,n in historial %}
+    <tr>
+        <td>{{ n }}</td>
+        <td>{{ t }}</td>
+
+        <td>{{h.Fecha|date:"d/m/Y"}}</td>
+        {% if h.Fecha_fin %}
+            <td>{{h.Fecha_fin|date:"d/m/Y"}}</td>
+        {%else%}
+            <td></td>
+        {% endif%}
+        
+        {% autoescape off %}
+    	
+            {% if h.Sancion %}
+            <td>{{h.Sancion}}</td>
+            {%else%}
+            <td></td>
+            {% endif%}
+            
+            {% if h.Profesor and prof %}
+           <td> <strong>{{h.Profesor}} ({{ horas|slice:h.Hora|last}})</strong><br/>{{h.Comentario}}</td>
+           
+           {%else%}
+           <td> {{h.Comentario}}</td>
+           {% endif %}
+        {% endautoescape %}
+        
+    </tr>
+    {% endfor %}
+    </table>
+
+{% else %}
+    <p>No hay historial para este alumno</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends "base_menu.html" %}
+
+{% block title %}Centro{% endblock %}
+
+{% block content %}
+<h3>Resumen de amonestaciones/sanciones por alumnos</h3>
+<form action="/convivencia/alumnos" method="POST" class="form-hotizontal">
+        {% csrf_token %}
+        <div class="form-group">
+              <div class="col-xs-8">
+                {{ form.as_p }}
+            
+           <input type="submit" value="Filtrar" /><br/>
+<br/>
+
+           </div>
+        </div>
+
+	
+    </form>
+<table class="table table-bordered">
+<tr>
+    <td class="text-center"><strong>N.</strong></td>
+    <td class="text-center" ><strong>Alumno</strong></td>
+    <td class="text-center" > <strong>Amonestaciones</strong></td>
+    <td class="text-center" > <strong>Sanciones</strong></td>
+  </tr>
+    {% for l in lista %}
+<tr>
+    <td class="text-center">{{forloop.counter}}</td>
+    <td>{{l.IdAlumno}}</td>
+    <td class="text-center">{{l.IdAlumno__count}} ({{l.Porcentajes.0}}%)</td>
+    <td class="text-center">{{l.Sanciones}} ({{l.Porcentajes.1}}%)</td>
+</tr>
+
+{% endfor %}
+<tr>
+  <td></td>
+  <td class="text-right"><strong>Total:</strong></td><td class="text-center"><strong>{{suma.0}}</string></td>
+  <td class="text-center"><strong>{{suma.1}}</string></td>
+</tr>
+</table>
+
+{% endblock %}
