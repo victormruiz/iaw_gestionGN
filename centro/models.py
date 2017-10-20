@@ -21,14 +21,14 @@ class Departamentos(models.Model):
 class Areas(models.Model):
 	   
 	Nombre = models.CharField(max_length=30)
-    Departamentos=models.ManyToManyField(Departamentos,blank=True)
+	Departamentos=models.ManyToManyField(Departamentos,blank=True)
 
 	def __unicode__(self):
 		return self.Nombre
 
 	class Meta:
 		verbose_name="Área"
-        verbose_name_plural="Áreas"
+		verbose_name_plural="Áreas"
 
 
 
@@ -89,6 +89,5 @@ class Alumnos(models.Model):
 	class Meta:
 		verbose_name="Alumno"
 		verbose_name_plural="Alumnos"
-
 
 
