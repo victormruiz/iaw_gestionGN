@@ -1882,6 +1882,24 @@
 },
 {
   "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$30000$2yFM6G81L6D7$sqzpGD2BoK9UHWv7Pw/8+YzpomELbBZIUzKrEYQaDYU=",
+    "last_login": "2017-10-17T15:47:08.433Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.es",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2017-10-17T14:45:37.392Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
   "pk": 2,
   "fields": {
     "password": "pbkdf2_sha256$30000$pMHrhbxMjEJu$GFk/JmH8XoUU/dNcykmuzeltgx+LQKd8UWNz7qmv9xM=",
