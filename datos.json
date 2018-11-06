@@ -1349,60 +1349,14 @@
     "Tipo": null
   }
 },
-{
-  "model": "contenttypes.contenttype",
-  "pk": 1,
-  "fields": {
-    "app_label": "centro",
-    "model": "departamentos"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 2,
-  "fields": {
-    "app_label": "centro",
-    "model": "alumnos"
-  }
-},
+
+
 {
   "model": "contenttypes.contenttype",
   "pk": 3,
   "fields": {
     "app_label": "centro",
     "model": "cursos"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 4,
-  "fields": {
-    "app_label": "centro",
-    "model": "areas"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 5,
-  "fields": {
-    "app_label": "centro",
-    "model": "profesores"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 6,
-  "fields": {
-    "app_label": "convivencia",
-    "model": "amonestaciones"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 7,
-  "fields": {
-    "app_label": "convivencia",
-    "model": "tiposamonestaciones"
   }
 },
 {
@@ -1421,14 +1375,7 @@
     "model": "logentry"
   }
 },
-{
-  "model": "contenttypes.contenttype",
-  "pk": 10,
-  "fields": {
-    "app_label": "auth",
-    "model": "permission"
-  }
-},
+
 {
   "model": "contenttypes.contenttype",
   "pk": 11,
@@ -1437,14 +1384,7 @@
     "model": "user"
   }
 },
-{
-  "model": "contenttypes.contenttype",
-  "pk": 12,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
+
 {
   "model": "contenttypes.contenttype",
   "pk": 13,

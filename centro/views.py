@@ -89,8 +89,8 @@ def ContarFaltas(lista_id):
     contar=[]
     for alum in lista_id:
 
-        am=str(len(Amonestaciones.objects.filter(IdAlumno_id=alum.values()[0])))
-        sa=str(len(Sanciones.objects.filter(IdAlumno_id=alum.values()[0])))
+        am=str(len(Amonestaciones.objects.filter(IdAlumno_id=list(alum.values())[0])))
+        sa=str(len(Sanciones.objects.filter(IdAlumno_id=list(alum.values())[0])))
         
         contar.append(am+"/"+sa)
     return contar
@@ -114,7 +114,7 @@ def EstaSancionado(lista_id):
     sanc=Sanciones.objects.filter(**dict).order_by("Fecha")
     listaid=[x.IdAlumno.id for x in sanc]
     for alum in lista_id:
-        if alum.values()[0] in listaid:
+        if list(alum.values())[0] in listaid:
             estasancionado.append(True)
         else:
             estasancionado.append(False)

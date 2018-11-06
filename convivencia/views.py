@@ -103,7 +103,7 @@ def resumen(request,tipo,mes,ano):
 	for f in dic_fechas:
 		fechas.append(f["Fecha"])
 
-	for dia in xrange(1,int(ult_dia)+1):
+	for dia in range(1,int(ult_dia)+1):
 		fecha=datetime(int(ano),int(mes),dia)
 		if fecha.date() in fechas:
 			calhtml=calhtml.replace(">"+str(dia)+"<",'><a href="/convivencia/show/%s/%s/%s/%s"><strong>%s</strong></a><'%(tipo,mes,ano,dia,dia))
@@ -121,7 +121,7 @@ def resumen(request,tipo,mes,ano):
 def AddMonths(d,x):
     newmonth = ((( d.month - 1) + x ) % 12 ) + 1
     newyear  = d.year + ((( d.month - 1) + x ) / 12 ) 
-    return datetime( newyear, newmonth, d.day)
+    return datetime( int(newyear), newmonth, d.day)
 
 @login_required(login_url='/')
 @user_passes_test(group_check_je,login_url='/')
