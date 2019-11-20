@@ -11,7 +11,7 @@ from centro.models import Alumnos,Profesores
 class TiposAmonestaciones(models.Model):
 	TipoAmonestacion = models.CharField(max_length=60)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.TipoAmonestacion
 
 	class Meta:
@@ -29,15 +29,15 @@ class Amonestaciones(models.Model):
 		('7','Sexta'),
 
 	)
-	IdAlumno = models.ForeignKey(Alumnos)
+	IdAlumno = models.ForeignKey(Alumnos, on_delete=models.CASCADE)
 	Fecha = models.DateField()
 	Hora = models.CharField(max_length=1,choices=hora,default='1')
 	Comentario=models.TextField(blank=True)
-	Profesor = models.ForeignKey(Profesores)
+	Profesor = models.ForeignKey(Profesores, on_delete=models.CASCADE)
 	Tipo = models.ForeignKey(TiposAmonestaciones, related_name='Tipo_de',blank=True,null=True,on_delete=models.SET_NULL)
 	
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.IdAlumno.Nombre 
 
 	class Meta:
@@ -47,14 +47,14 @@ class Amonestaciones(models.Model):
 
 class Sanciones(models.Model):
 	
-	IdAlumno = models.ForeignKey(Alumnos)
+	IdAlumno = models.ForeignKey(Alumnos, on_delete=models.CASCADE)
 	Fecha = models.DateField()
 	Fecha_fin = models.DateField(verbose_name="Fecha finalización")
 	Sancion=models.CharField(max_length=100,blank=True)
 	Comentario=models.TextField(blank=True)
 	
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.IdAlumno.Nombre 
 
 	class Meta:

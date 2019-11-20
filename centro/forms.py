@@ -10,7 +10,7 @@ class DepartamentosForm(forms.Form):
 
         def __init__(self, *args, **kwargs):
             super(DepartamentosForm, self).__init__(*args, **kwargs)
-            if args[0].has_key("Areas") and args[0]["Areas"]!="":
+            if "Areas" in args[0] and args[0]["Areas"]!="":
                 areas=Areas.objects.get(id=args[0]["Areas"])
                 self.fields['Departamento']. queryset= areas.Departamentos.all()
                 self.fields['Departamento'].initial=args[0]["Departamento"]

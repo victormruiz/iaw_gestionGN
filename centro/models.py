@@ -10,7 +10,7 @@ class Departamentos(models.Model):
 	Abr = models.CharField(max_length=4)
 	Nombre = models.CharField(max_length=30)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.Nombre
 
 	class Meta:
@@ -23,7 +23,7 @@ class Areas(models.Model):
 	Nombre = models.CharField(max_length=30)
 	Departamentos=models.ManyToManyField(Departamentos,blank=True)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.Nombre
 
 	class Meta:
@@ -47,7 +47,7 @@ class Profesores(models.Model):
 	
 	
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.Nombre+" "+self.Apellidos
 
 	class Meta:
@@ -60,7 +60,7 @@ class Cursos(models.Model):
 	Tutor = models.ForeignKey(Profesores, related_name='Tutor_de',blank=True,null=True,on_delete=models.SET_NULL)
 	EquipoEducativo=models.ManyToManyField(Profesores, verbose_name="Equipo Educativo",blank=True)
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.Curso
 
 	class Meta:
@@ -83,7 +83,7 @@ class Alumnos(models.Model):
 	Telefono2 = models.CharField(max_length=12,blank=True)
 	Obs=models.TextField(blank=True,verbose_name="Observaciones")
 
-	def __unicode__(self):
+	def __str__(self):
 		return self.DNI+" - "+self.Nombre 
 
 	class Meta:

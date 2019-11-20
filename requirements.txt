@@ -1,4 +1,4 @@
-Django==1.10.2
+Django==2.2.7
 Pillow==4.0.0
 PyPDF2==1.26.0
 argparse==1.2.1
